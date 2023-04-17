@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: #e8e5e5;
+}
+
+.calcutor {
+  background: #fdfdfd;
+  width: 23rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #530101;
+  position: relative;
+  padding: 10px;
+}
+
+.cal-display {
+  background: #2e3d51;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0.3rem;
+  border-radius: 5px;
+  height: 4rem;
+  margin: 10px;
+  overflow: hidden;
+  
+}
+
+.cal-display h1 {
+  font-size: 48px;
+}
+
+.cal-btn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.equal {
+  grid-column: -2;
+  grid-row: 2 / span 4;
+}
+
+button {
+  min-height: 60px;
+  font-size: 28px;
+  border-radius: 7px;
+  border: none;
+  background: #dce4ef;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(105%);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.operator {
+  background: #ff6ca9;
+}
