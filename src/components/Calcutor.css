@@ -40,6 +40,7 @@ body {
 
 .cal-display h1 {
   font-size: 48px;
+  margin-bottom: 1rem;
 }
 
 .cal-btn {

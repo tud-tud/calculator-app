@@ -5,8 +5,6 @@ import "./Calcutor.css";
 const Calculater = () => {
   const [inputValue, setInputValue] = useState("0");
 
-  const matLength = 5;
-
   const display = (value) => {
     if (inputValue.toString().charAt(0) === "0") {
       setInputValue(value);
@@ -21,7 +19,7 @@ const Calculater = () => {
 
   const calculate = () => {
     let result = eval(inputValue);
-    setInputValue(result);
+    setInputValue(result.toFixed(3));
   };
 
   return (
@@ -53,7 +51,6 @@ const Calculater = () => {
         <button onClick={() => display("3")}>3</button>
         <button onClick={() => display(".")}>.</button>
         <button onClick={() => display("0")}>0</button>
-        {/* <button onClick={()=> setInputValue('0')} className='cleabtn'>C</button> */}
         <button onClick={reset} className="cleabtn">
           C
         </button>
